@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Assessoria Acadêmica</title>
+    <meta
+      name="description"
+      content="Entre em contato com nossa equipe e solicite um orçamento personalizado para o seu trabalho acadêmico."
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-bx8BztkLBRFtKbjrFOE3VMnSQCwG1NFf1M7C0Fnp9vMGn/6vIM98PfwxWn2ew76gOgAA5zEWnNVcKszpLpnZWA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Assessoria Acadêmica</div>
+          <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="how-it-works.html">Como Funciona</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Depoimentos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html" class="active cta-button">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      style="background-color: var(--primary-dark); color: #fff; padding: 6rem 0 4rem; margin-top: 70px;"
+    >
+      <div class="container">
+        <h1 style="color:#fff;">Fale Conosco</h1>
+        <p style="max-width: 800px; margin-top: 0.5rem; color: #d0d8e0;">
+          Estamos prontos para entender suas necessidades e oferecer a melhor
+          solução acadêmica. Preencha o formulário abaixo ou entre em contato
+          diretamente via WhatsApp.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Details -->
+    <section class="contact-section">
+      <div class="contact-wrapper">
+        <div class="contact-details">
+          <h3>Informações de Contato</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Londrina, PR - Brasil</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contato@academica.com">contato@academica.com</a>
+          </p>
+          <p>
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/5543999999999" target="_blank">+55 (43)
+              99999‑9999</a>
+          </p>
+          <p>
+            Nossa equipe responde em até 24 horas úteis. Caso prefira,
+            agendamos uma videoconferência para entender melhor seu projeto.
+          </p>
+        </div>
+        <form class="contact-form">
+          <div>
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+          </div>
+          <div>
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx" />
+          </div>
+          <div>
+            <label for="nivel">Nível Acadêmico</label>
+            <select id="nivel" name="nivel" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="graduacao">Graduação</option>
+              <option value="pos-graduacao">Pós-graduação</option>
+              <option value="mestrado">Mestrado</option>
+              <option value="doutorado">Doutorado</option>
+              <option value="profissional">Profissional</option>
+            </select>
+          </div>
+          <div>
+            <label for="servico">Tipo de Serviço</label>
+            <select id="servico" name="servico" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="orientacao">Orientação de TCC/Projeto</option>
+              <option value="revisao">Revisão de Texto</option>
+              <option value="formatacao">Formatação (ABNT, APA etc.)</option>
+              <option value="projeto">Projeto de Pesquisa</option>
+              <option value="artigo">Artigo Científico</option>
+              <option value="monografia">Monografia</option>
+              <option value="dissertacao">Dissertação</option>
+              <option value="tese">Tese</option>
+              <option value="mentoria">Mentoria Acadêmica</option>
+            </select>
+          </div>
+          <div>
+            <label for="prazo">Prazo Desejado</label>
+            <input type="text" id="prazo" name="prazo" placeholder="Ex.: 30 dias" />
+          </div>
+          <div class="full-width">
+            <label for="mensagem">Descrição do Projeto</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte-nos mais sobre suas necessidades" required></textarea>
+          </div>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h4>Assessoria Acadêmica</h4>
+          <p>
+            Prestamos serviços de orientação, revisão e formatação de
+            trabalhos acadêmicos com excelência, ética e sigilo.
+          </p>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p>Email: <a href="mailto:contato@academica.com">contato@academica.com</a></p>
+          <p>WhatsApp: <a href="https://wa.me/5543999999999" target="_blank">+55 (43)
+              99999‑9999</a></p>
+          <p>Endereço: Londrina, PR - Brasil</p>
+        </div>
+        <div>
+          <h4>Redes Sociais</h4>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:1rem; font-size:0.8rem; color:#a0a8b5;">
+        © 2026 Assessoria Acadêmica. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
